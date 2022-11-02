@@ -1,5 +1,5 @@
 import React from "react";
-import { SportsItems } from "../Items/SportsItem";
+import { TechPageItems } from "../Pages/TechPageItems";
 
 function Sports() {
   return (
@@ -7,16 +7,20 @@ function Sports() {
       <div className="tech_item">
         <h1>Sports Events</h1>
         <ul>
-          {SportsItems.map((item) => {
-            return (
-              <li>
-                <a href="">
-                  <img key={item.id} src={item.img} alt=""></img>
-                  <p>{item.name}</p>
-                </a>
-              </li>
-            );
-          })}
+          {TechPageItems.map((item) => {
+            if(item.id >10 && item.id <16)
+            {
+              return (
+                <li>
+                  <a href={"/eventPage/"+item.id}>
+                    <img key={item.id} src={item.img} alt=""></img>
+                    <p>{item.heading}</p>
+                  </a>
+                </li>
+              );
+            }
+            }
+)}
         </ul>
       </div>
     </div>

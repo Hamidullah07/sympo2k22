@@ -1,5 +1,5 @@
 import React from "react";
-import { NonTechItems } from "../Items/NonTechItems";
+import { TechPageItems } from "../Pages/TechPageItems";
 import './NonTech.css';
 
 function NonTech() {
@@ -8,16 +8,20 @@ function NonTech() {
       <div className="tech_item">
         <h1>Non-Technical Events</h1>
         <ul>
-          {NonTechItems.map((item) => {
-            return (
-              <li>
-                <a href="">
-                  <img key={item.id} src={item.img} alt=""></img>
-                  <p>{item.name}</p>
-                </a>
-              </li>
-            );
-          })}
+          {TechPageItems.map((item) => {
+            if(item.id <11 && item.id >5)
+            {
+              return (
+                <li>
+                  <a href={"/eventPage/"+item.id}>
+                    <img key={item.id} src={item.img} alt=""></img>
+                    <p>{item.heading}</p>
+                  </a>
+                </li>
+              );
+            }
+            }
+)}
         </ul>
       </div>
     </div>

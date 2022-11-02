@@ -1,5 +1,5 @@
 import React from 'react'
-import { TechItems } from '../Items/TechnicalItems';
+import { TechPageItems } from '../Pages/TechPageItems';
 import './Technical.css';
 
 function Technical () {
@@ -7,17 +7,21 @@ function Technical () {
     <div className="tech_item">
     <h1>Technical Events</h1>
     <ul>
-      {TechItems.map((item) => {
-        return (
-          <li>
-            <a href="">
-              <img key={item.id} src={item.img} alt=""></img>
-              <p>{item.name}</p>
-            </a>
-          </li>
-        );
-      })}
-    </ul>
+          {TechPageItems.map((item) => {
+            if(item.id <6)
+            {
+              return (
+                <li>
+                  <a href={"/eventPage/"+item.id}>
+                    <img key={item.id} src={item.img} alt=""></img>
+                    <p>{item.heading}</p>
+                  </a>
+                </li>
+              );
+            }
+            }
+)}
+        </ul>
   </div>
   )
 }

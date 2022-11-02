@@ -1,57 +1,56 @@
 .container {
-    top: 0;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    background-color: white;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
-    border-bottom: 1px  gray;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  top: 0;
+  width: 100%;
+  display: flex;
+  /* position: fixed; */
+  background: white;
+  /* overflow: hidden; */
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  border-bottom: 1px gray;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
-.container h2{
-    font-size: 25px;
-    padding: 15px 20px;
-    border-radius: 70px;
-    background: linear-gradient(45deg, #ff0081, #6827b0);
-    color: white;
+.container h2 {
+  font-size: 25px;
+  padding: 15px 20px;
+  border-radius: 70px;
+  color:aliceblue;
+  background: linear-gradient(to bottom, #2c3e50, #4ca1af);
 }
 
 .nav_items {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    width: 70vw;
-    justify-content: flex-end;
-    color: black;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 70vw;
+  justify-content: flex-end;
+  color: black;
 }
 
 .nav_item {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav_items a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-right: 2rem;
-    padding: 8px 16px;
-    border-radius: 20px;
-    background-image: linear-gradient(45deg, #ff0081, #6827b0);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .nav_items a:hover {
-    background: linear-gradient(45deg, #ff0081, #6827b0);;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    transition: all 0.1s ease-in-out;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
 }
